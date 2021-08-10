@@ -3,4 +3,6 @@ tmin = 0
 tmax = 100π
 tvec = range(tmin, tmax, length = 100)
 
-plot(sin.(tvec), cos.(tvec))
+pp = plot(sin.(tvec), cos.(tvec))
+
+savefig(pp,"star.png")
